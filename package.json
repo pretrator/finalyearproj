@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app",
+    "start": "npm run getweights && node app",
+    "getweights":"kaggle datasets download -d achrafkhazri/yolo-weights-for-licence-plate-detector",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gitadd": "git add .",
     "gitcommit": "git commit -m 'deploy'",
