@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitadd":"git add .",
+    "gitcommit":"git commit -m 'deploy'",
+    "gitpush":"git push",
+    "deploy": "npm run gitadd && npm run gitcommit && npm run gitpush"
   },
   "repository": {
     "type": "git",
