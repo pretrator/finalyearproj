@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run getweights && node app",
+    "start": "npm run getweights && npm run installer && node app",
+    "installer":"apt-get update && apt-get install -y libsm6 libxext6 libxrender-dev libglib2.0-0 && pip install opencv-python",
     "getweights":"kaggle datasets download -d achrafkhazri/yolo-weights-for-licence-plate-detector",
     "test": "echo \"Error: no test specified\" && exit 1",
     "gitadd": "git add .",
