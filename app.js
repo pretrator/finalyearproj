@@ -18,7 +18,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage:storage})
 
 
-
+//jhghjg
 app.post("/",upload.single("image"),(req,res)=>{
  let dataToSend="";
  const python = spawn('python', ['detecor.py',"--image",req.file.filename]);
